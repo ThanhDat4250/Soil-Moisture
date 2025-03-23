@@ -1,12 +1,8 @@
 # Soil Moisture Monitoring with Raspberry Pi Pico
 
-This project utilizes a capacitive analog soil moisture sensor and a Raspberry Pi Pico to monitor soil moisture levels, enabling efficient irrigation.
+This project utilizes Raspberry Pi Pico and a Capacitive Soil Moisture Sensor to monitor soil moisture levels, enabling efficient irrigation.
 
-## Objective
-
-To provide farmers with real-time soil moisture data, optimizing watering schedules and promoting healthy plant growth.
-
-Project idea credit: [Microsoft IoT For Beginners - Detect Soil Moisture](https://github.com/microsoft/IoT-For-Beginners/tree/main/2-farm/lessons/2-detect-soil-moisture)
+For a farmer to get the best plant growth, the soil needs to be not too wet and not too dry. IoT devices can help with this by measuring soil moisture, allowing a farmer to only water when needed, optimizing watering schedules and promoting healthy plant growth.
 
 ## Files Structure
 ```
@@ -27,14 +23,19 @@ Soil-Moisture/
 * [Raspberry Pi Pico 1](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-family)
 * Capacitive Analog Soil Moisture Sensor
 * LCD 16x2 I2C
-* Jumper Wires
+* Jumper Wires and Breadboard
 
+> [!note]
+> Raspberry Pi Pico 1 has an integrated `12-bit ADC` that generates values from `0-4095`
+>
+> Capacitive Analog Soil Moisture Sensor only returns analog signal that represents a voltage to indicate soil moisture
+> 
 ### Software
 
 * Thonny IDE: [Thonny Python IDE for beginners](https://thonny.org/)
 * MicroPython for Raspberry Pico [MicroPython Pico](https://micropython.org/download/RPI_PICO/)
 
-Check out [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) for more information.
+> Check out [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) for more information.
 
 ### Dependencies
 The project requires the following libraries: `pico_i2c_lcd.py` `lcd_api.py`
@@ -76,6 +77,10 @@ We did a simple experiment to measure 4 real soil samples and record the data in
 With the actual data gathered from the abovementioned experiment, here is the linear graph that matches sensor reading values from 0 - 4095 with actual moisture percent present in the soil sample. This is the code [moisture_linear.py](./src/assets/graph/moisture_linear.py) to generate the graph below.
 
 ![graph](./src/assets/img/graph_moisture.jpg)
+
+## Credits
+Project idea: [Microsoft IoT For Beginners - Detect Soil Moisture](https://github.com/microsoft/IoT-For-Beginners/tree/main/2-farm/lessons/2-detect-soil-moisture)
+
 
 
 
