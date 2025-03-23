@@ -20,16 +20,14 @@ Soil-Moisture/
 
 ### Hardware
 
-* [Raspberry Pi Pico 1](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-family)
-* Capacitive Analog Soil Moisture Sensor
 * LCD 16x2 I2C
 * Jumper Wires and Breadboard
-
-> [!note]
+* [Raspberry Pi Pico 1](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-family)
 > Raspberry Pi Pico 1 has an integrated `12-bit ADC` that generates values from `0-4095`
->
+* Capacitive Analog Soil Moisture Sensor
 > Capacitive Analog Soil Moisture Sensor only returns analog signal that represents a voltage to indicate soil moisture
-> 
+
+
 ### Software
 
 * Thonny IDE: [Thonny Python IDE for beginners](https://thonny.org/)
@@ -70,11 +68,15 @@ Upload the MicroPython code at [main.py](./src/main.py) to the Pico via Thonny. 
   
 ### 3.  **Sensor Calibration:**
 
-Use the gravimetric method to calibrate the sensor. This involves measuring the weight of water per unit weight of dry soil (kg water/kg dry soil).
+Use the gravimetric method to calibrate the sensor — measuring the weight of water per unit weight of dry soil (kg water/kg dry soil).
 
-We did a simple experiment to measure 4 real soil samples and record the data including weights of wet soil, dry soil, and sensor reading values for the purpose of calibration. Here is the experiment video: 
+We did a simple experiment to measure 4 real soil samples and record the data including weights of wet soil, dry soil, and sensor reading values for the purpose of calibration. 
 
-With the actual data gathered from the abovementioned experiment, here is the linear graph that matches sensor reading values from 0 - 4095 with actual moisture percent present in the soil sample. This is the code [moisture_linear.py](./src/assets/graph/moisture_linear.py) to generate the graph below.
+> Here is the experiment video: 
+
+With the actual data gathered from the abovementioned experiment, here is the linear graph that matches sensor reading values from 0 - 4095 with actual moisture percent present in the soil sample. 
+
+> This is the code [moisture_linear.py](./src/assets/graph/moisture_linear.py) to generate the graph below.
 
 ![graph](./src/assets/img/graph_moisture.jpg)
 
