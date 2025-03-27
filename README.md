@@ -72,7 +72,7 @@ Use the gravimetric method to calibrate the sensor — measuring the weight of w
 
 We did a simple experiment to measure 4 real soil samples and record the data including weights of wet soil, dry soil, and sensor reading values for the purpose of calibration. 
 
-> Here is the experiment video: 
+> Here is the experiment video: youtu.be/G-8WgRoHzO4?si=smeIw9COupU9lMZ7
 
 With the actual data gathered from the abovementioned experiment, here is the linear graph that matches sensor reading values from 0 - 4095 with actual moisture percent present in the soil sample. 
 
