@@ -5,7 +5,7 @@ This project utilizes Raspberry Pi Pico and a Capacitive Soil Moisture Sensor to
 For a farmer to get the best plant growth, the soil needs to be not too wet and not too dry. IoT devices can help with this by measuring soil moisture, allowing a farmer to only water when needed, optimizing watering schedules and promoting healthy plant growth.
 
 > [!note]
-> Our Experiment video: [How to measure soil moisture 101 - Group 5](youtu.be/G-8WgRoHzO4?si=smeIw9COupU9lMZ7)
+> Our Experiment video: [How to measure soil moisture 101 - Group 5](https://www.youtube.com/watch?v=G-8WgRoHzO4)
 
 ## Files Structure
 ```
@@ -75,7 +75,7 @@ Use the gravimetric method to calibrate the sensor — measuring the weight of w
 
 We did a simple experiment to measure 4 real soil samples and record the data including weights of wet soil, dry soil, and sensor reading values for the purpose of calibration. 
 
-> Here is the experiment video: [How to measure soil moisture 101 - Group 5](youtu.be/G-8WgRoHzO4?si=smeIw9COupU9lMZ7)
+> Here is the experiment video: [How to measure soil moisture 101 - Group 5](https://www.youtube.com/watch?v=G-8WgRoHzO4)
 
 With the actual data gathered from the abovementioned experiment, here is the linear graph that matches sensor reading values from 0 - 4095 with actual moisture percent present in the soil sample. 
 
