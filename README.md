@@ -39,11 +39,11 @@ Soil-Moisture/
 > Check out [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) for more information.
 
 ### Dependencies
-The project requires the following libraries: `pico_i2c_lcd.py` `lcd_api.py`
+The project requires the following modules: `pico_i2c_lcd.py` `lcd_api.py`
 
-You will need to download these files and copy them to your Raspberry Pi Pico's filesystem using Thonny.
+You can find these in the `module` folder. Download and copy them to your Raspberry Pi Pico's filesystem using Thonny.
 
-You can find the library and instructions on how to install it here: [RPI-PICO-I2C-LCD](https://github.com/T-622/RPI-PICO-I2C-LCD)
+You can find the source here: [RPI-PICO-I2C-LCD](https://github.com/T-622/RPI-PICO-I2C-LCD)
 
 ## Setup
 
